@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<!-- Googlear como puede afectar esto <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
 
@@ -22,10 +22,10 @@
 		<img src="src/images/Logo.png" alt="Logo de Undefined Shell">
 		<nav>
 			<ul class="nav-list">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Suscribirse</a></li>
-				<li><button>Undefined Academy</button></li>
-				<li><button>Discord</button></li>
+				<li><a href="#" class="text-button text-button-md font-bold is-active">Home</a></li>
+				<li><a href="#" class="text-button text-button-md font-bold">Subscribe</a></li>
+				<li><button class="button button-primary">Undefined Academy</button></li>
+				<li><button class="button button-secondary">Discord</button></li>
 			</ul>
 		</nav>
 	</header>
@@ -35,36 +35,37 @@
 		</section>
 		<section class="post-list-container">
 			<nav class="tags-filter">
-				<ul class="nav-list">
-					<li><a href="#">Todos</a></li>
-					<li><a href="#">HTML</a></li>
-					<li><a href="#">CSS</a></li>
-					<li><a href="#">Javascript</a></li>
-					<li><a href="#">Web components</a></li>
-					<li><a href="#">Sistemas de diseño</a></li>
+				<ul class="nav-list filter-list">
+					<li class="is-active-filter"><a href="#" class=" filter paragraph paragraph-sm font-bold">All</a></li>
+					<li><a href="#" class="filter paragraph paragraph-sm font-bold">HTML</a></li>
+					<li><a href="#" class="filter paragraph paragraph-sm font-bold">CSS</a></li>
+					<li><a href="#" class="filter paragraph paragraph-sm font-bold">Javascript</a></li>
+					<li><a href="#" class="filter paragraph paragraph-sm font-bold">Web components</a></li>
+					<li><a href="#" class="filter paragraph paragraph-sm font-bold">Design System</a></li>
 				</ul>
-				<input type="text" placeholder="Buscar">
+				<input type="search" placeholder="Search" class="input">
 			</nav>
 			<div class="post-list">
 				<article class="card">
 					<section>
 						<header>
-							<img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen de un post">
+                            
+							<img src="https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80" alt="Post image">
 							<div class="tags">
 								<span class="tag"><a href="#">Web Components</a></span>
 								<span class="tag"><a href="#">CSS</a></span>
 							</div>
-							<h2>Static, dynamic, single-page, multiple-page and JAMstack</h2>
+							<h2 class="heading heading-sm font-bold">Static, dynamic, single-page, multiple-page and JAMstack</h2>
 						</header>
-						<p>Nowadays we hear terms such as static, dynamic, SPA, Muti-pages and
+						<p class="paragraph paragraph-sm font-regular">Nowadays we hear terms such as static, dynamic, SPA, Muti-pages and
 							lately, the term JAMStack. ¿What does all this mean?...</p>
 					</section>
 					<footer>
 						<div class="author">
 							<img src="https://i.pravatar.cc/300" alt="Avatar de un autor">
-							<span>Author name</span>
+							<span class="paragraph paragraph-xs font-bold">Author name</span>
 						</div>
-						<span class="reading-time">
+						<span class="reading-time paragraph paragraph-xs font-regular">
 							7 min read
 						</span>
 					</footer>
@@ -72,22 +73,21 @@
 				<article class="card">
 					<section>
 						<header>
-							<img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen de un post">
+							<img src="https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80" alt="Post image">
 							<div class="tags">
 								<span class="tag"><a href="#">Web Components</a></span>
 								<span class="tag"><a href="#">CSS</a></span>
 							</div>
-							<h2>Static, dynamic, single-page, multiple-page and JAMstack</h2>
+							<h2 class="heading heading-sm font-bold">Static, dynamic, single-page, multiple-page and JAMstack</h2>
 						</header>
-						<p>Nowadays we hear terms such as static, dynamic, SPA, Muti-pages and
-							lately, the term JAMStack. ¿What does all this mean?...</p>
+						<p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ad accusamus repellendus natus. Vel ex doloremque excepturi repellendus modi unde commodi pariatur nostrum! Unde, autem laborum! Odio et explicabo sunt.</p>
 					</section>
 					<footer>
 						<div class="author">
-							<img src="https://i.pravatar.cc/300" alt="Avatar de un autor">
-							<span>Author name</span>
+							<img src="https://i.pravatar.cc/300" alt="author avatar">
+							<span class="paragraph paragraph-xs font-bold">Author name</span>
 						</div>
-						<span class="reading-time">
+						<span class="reading-time paragraph paragraph-xs font-regular">
 							7 min read
 						</span>
 					</footer>
@@ -95,22 +95,24 @@
 				<article class="card">
 					<section>
 						<header>
-							<img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen de un post">
+
+                           
+							<img src="https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80" alt="Post image">
 							<div class="tags">
 								<span class="tag"><a href="#">Web Components</a></span>
 								<span class="tag"><a href="#">CSS</a></span>
 							</div>
-							<h2>Static, dynamic, single-page, multiple-page and JAMstack</h2>
+							<h2 class="heading heading-sm font-bold">Static, dynamic, single-page, multiple-page and JAMstack</h2>
 						</header>
-						<p>Nowadays we hear terms such as static, dynamic, SPA, Muti-pages and
+						<p class="paragraph paragraph-sm font-regular">Nowadays we hear terms such as static, dynamic, SPA, Multi-pages and
 							lately, the term JAMStack. ¿What does all this mean?...</p>
 					</section>
 					<footer>
 						<div class="author">
-							<img src="https://i.pravatar.cc/300" alt="Avatar de un autor">
-							<span>Author name</span>
+							<img src="https://i.pravatar.cc/300" alt="author avatar">
+							<span class="paragraph paragraph-xs font-bold">Author name</span>
 						</div>
-						<span class="reading-time">
+						<span class="reading-time paragraph paragraph-xs font-regular">
 							7 min read
 						</span>
 					</footer>
