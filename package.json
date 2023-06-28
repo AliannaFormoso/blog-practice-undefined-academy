@@ -13,5 +13,8 @@
   "devDependencies": {
     "sass": "^1.63.6",
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.8"
   }
 }
